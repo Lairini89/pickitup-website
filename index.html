@@ -1,6 +1,10 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
 
+export default function PickItUpHome() {
+  return (
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
-      {HI}
+      {/* Header */}
       <header className="flex justify-between items-center p-4 shadow-md">
         <h1 className="text-2xl font-bold">PickItUp</h1>
         <div className="space-x-2">
@@ -31,11 +35,20 @@
       <section id="electronics" className="p-6">
         <h3 className="text-2xl font-semibold mb-4">📱 إلكترونيات</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Sample Product */}
+          {/* Product 1 */}
           <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://via.placeholder.com/300x200" alt="Product" className="rounded mb-2" />
+            <img src="https://via.placeholder.com/300x200" alt="Smartphone" className="rounded mb-2" />
             <h4 className="text-lg font-bold">هاتف ذكي</h4>
             <p className="text-sm mb-2">أحدث الهواتف الذكية بأسعار مغرية.</p>
+            <Button asChild>
+              <a href="#" target="_blank">اشتري الآن</a>
+            </Button>
+          </div>
+          {/* Product 2 */}
+          <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
+            <img src="https://via.placeholder.com/300x200" alt="Laptop" className="rounded mb-2" />
+            <h4 className="text-lg font-bold">حاسوب محمول</h4>
+            <p className="text-sm mb-2">حاسوب محمول بشاشة عالية الدقة.</p>
             <Button asChild>
               <a href="#" target="_blank">اشتري الآن</a>
             </Button>
@@ -46,101 +59,7 @@
       <section id="clothing" className="p-6">
         <h3 className="text-2xl font-semibold mb-4">👗 ملابس وأكسسوارات</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Product 1 */}
           <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://cache.net-a-porter.com/images/products/46376663162835283/46376663162835283_in_m.jpg" alt="LOEWE Top" className="rounded mb-2" />
-            <h4 className="text-lg font-bold">LOEWE - Paula’s Ibiza Silk Top</h4>
-            <p className="text-sm mb-2">توب حريري أنيق من LOEWE بتصميم صيفي مميز.</p>
-            <Button asChild>
-              <a href="https://www.net-a-porter.com/en-ma/shop/product/loewe/clothing/blouses/plus-paula-s-ibiza-embellished-cutout-printed-silk-twill-halterneck-top/46376663162835283" target="_blank" rel="noopener noreferrer">اشتري الآن</a>
-            </Button>
-          </div>
-
-          <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://cache.net-a-porter.com/images/products/1647597358082718/1647597358082718_in_m.jpg" alt="Stella McCartney Blazer" className="rounded mb-2" />
-            <h4 className="text-lg font-bold">Stella McCartney - Wool Blazer</h4>
-            <p className="text-sm mb-2">جاكيت صوف أنيق بتصميم كلاسيكي من Stella McCartney.</p>
-            <Button asChild>
-              <a href="https://www.net-a-porter.com/en-ma/shop/product/stella-mccartney/clothing/blazers/pinstriped-wool-blazer/1647597358082718" target="_blank" rel="noopener noreferrer">اشتري الآن</a>
-            </Button>
-          </div>
-
-          <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://cache.net-a-porter.com/images/products/1647597337702593/1647597337702593_in_m.jpg" alt="ETRO Floral Midi Dress" className="rounded mb-2" />
-            <h4 className="text-lg font-bold">ETRO - Floral Midi Dress</h4>
-            <p className="text-sm mb-2">فستان ميدي مطبوع بزهور وتفاصيل أنثوية راقية.</p>
-            <Button asChild>
-              <a href="https://www.net-a-porter.com/fr-fr/shop/product/etro/robe-midi-en-popeline-de-coton-melange-a-imprime-fleuri-et-a-fronces/1647597358082718" target="_blank" rel="noopener noreferrer">اشتري الآن</a>
-            </Button>
-          </div>
-
-          <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://cache.net-a-porter.com/images/products/1647597337674114/1647597337674114_in_m.jpg" alt="CHARO RUIZ Dress" className="rounded mb-2" />
-            <h4 className="text-lg font-bold">CHARO RUIZ - Melia Maxi Dress</h4>
-            <p className="text-sm mb-2">فستان صيفي طويل من قماش شفاف بطبعات.</p>
-            <Button asChild>
-              <a href="https://www.net-a-porter.com/fr-fr/shop/product/charo-ruiz/robe-longue-en-voile-de-coton-melange-imprime-melia/1647597358082718" target="_blank" rel="noopener noreferrer">اشتري الآن</a>
-            </Button>
-          </div>
-
-          <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://cache.net-a-porter.com/images/products/1647597337587186/1647597337587186_in_m.jpg" alt="FAITHFULL Striped Dress" className="rounded mb-2" />
-            <h4 className="text-lg font-bold">FAITHFULL - Antibes Linen Dress</h4>
-            <p className="text-sm mb-2">فستان ميدي بظهر مفتوح وخطوط صيفية منعشة.</p>
-            <Button asChild>
-              <a href="https://www.net-a-porter.com/fr-fr/shop/product/faithfull/robe-midi-dos-ouvert-en-lin-a-rayures-antibes/1647597358082718" target="_blank" rel="noopener noreferrer">اشتري الآن</a>
-            </Button>
-          </div>
-
-          <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://cache.net-a-porter.com/images/products/1647597351483543/1647597351483543_in_m.jpg" alt="STOULS Jones Blazer" className="rounded mb-2" />
-            <h4 className="text-lg font-bold">STOULS - Jones Suede Blazer</h4>
-            <p className="text-sm mb-2">بليزر من الجلد المدبوغ بتصميم عصري أنيق.</p>
-            <Button asChild>
-              <a href="https://www.net-a-porter.com/fr-fr/shop/product/stouls/blazer-a-double-boutonnage-en-daim-jones/1647597358082718" target="_blank" rel="noopener noreferrer">اشتري الآن</a>
-            </Button>
-          </div>
-
-          <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://cache.net-a-porter.com/images/products/1647597338111072/1647597338111072_in_m.jpg" alt="TOTEME Cotton Jacket" className="rounded mb-2" />
-            <h4 className="text-lg font-bold">TOTEME - Cotton Canvas Jacket</h4>
-            <p className="text-sm mb-2">سترة قطنية أنيقة بتفاصيل من المخمل المضلع.</p>
-            <Button asChild>
-              <a href="https://www.net-a-porter.com/fr-fr/shop/product/toteme/veste-en-toile-de-coton-a-finitions-en-velours-cotele/1647597358082718" target="_blank" rel="noopener noreferrer">اشتري الآن</a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      <section id="books" className="p-6">
-        <h3 className="text-2xl font-semibold mb-4">📚 كتب</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="border rounded-2xl p-4 shadow hover:shadow-lg transition">
-            <img src="https://via.placeholder.com/300x200" alt="Product" className="rounded mb-2" />
-            <h4 className="text-lg font-bold">كتاب تحفيزي</h4>
-            <p className="text-sm mb-2">كتب لتطوير الذات والتفكير الإيجابي.</p>
-            <Button asChild>
-              <a href="#" target="_blank">اشتري الآن</a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-100 dark:bg-gray-800 p-4 text-center text-sm mt-8">
-        © 2025 PickItUp. جميع الحقوق محفوظة.
-      </footer>
-    </div>
-  );
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
-</head>
-<body>
-    <h1>Hello, welcome to my website!</h1>
-    <p>This is a placeholder page.</p>
-</body>
-</html>
+            <img src="https://via.placeholder.com/300x200" alt="T-shirt" className="rounded mb-2" />
+            <h4 className="text-lg font-bold">تي ش
